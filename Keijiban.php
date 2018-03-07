@@ -48,9 +48,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <?php
 
 //PDOでDBに接続する
-$dsn = '';
-$user = '';
-$password = '';
+$dsn = 'mysql:dbname=xxxxxx;host=xxxxx'; 
+$user = 'xxx';
+$password = 'XxxXxx';
 $pdo = new PDO($dsn,$user,$password);
 $stmt = $pdo -> query('SET NAMES utf8'); //文字化け対策
 
